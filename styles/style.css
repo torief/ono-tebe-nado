@@ -30,14 +30,14 @@
 
 }
 
-.header__links-list-right {
+.header__links__list {
   margin-top: 10px;
   list-style: none;
   width: 300px;
 
 }
 
-.header__links-list-left {
+.header__links-list-line {
   display: flex;
   justify-content: left;
   gap: 25px;
@@ -48,14 +48,15 @@
 
 }
 
-.header__links-list-item1 {
-  display: list-item;
-  text-align: center;
-  list-style-type: none;
-}
+
 
 .header-link_bullit {
   list-style: circle;
+}
+.header-link_no-bullit{
+  display: list-item;
+  text-align: center;
+  text-decoration: none;
 }
 
 .header__links-list-item-line {
@@ -64,6 +65,13 @@
   list-style-type: circle;
 
 }
+
+.header__links-list-item-line:first-child {
+  
+  list-style-type: none;
+
+}
+
 
 .header__logo-image {
   flex-shrink: 0;
