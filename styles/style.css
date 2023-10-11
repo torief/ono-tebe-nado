@@ -3,19 +3,23 @@
   justify-content: center;
   align-items: center;
   gap: 282px;
-  max-width: 1340px;
+  max-width: 1440px;
   min-height: 293px;
   margin-top: 32px;
   margin-left: 51px;
   margin-right: 51px;
 }
 
-.header_menu {
+.menu {
   display: grid;
   grid-template-columns: 3fr 2.5fr 1fr;
   place-content: center space-between;
-  max-width: 1340px;
+  max-width: 1440px;
   
+}
+
+.address_link_list_item{
+  max-width: 250px;
 }
 
 
@@ -31,9 +35,11 @@
 }
 
 .header__links__list {
+  display:block;
   margin-top: 10px;
   list-style: none;
   width: 300px;
+  justify-content: left;
 
 }
 
@@ -51,12 +57,16 @@
 
 
 .header-link_bullit {
-  list-style: circle;
+  list-style-type: circle;
+  font-size: large;
+  
+  
 }
 .header-link_no-bullit{
   display: list-item;
   text-align: center;
   text-decoration: none;
+  font-size: large;
 }
 
 .header__links-list-item-line {
@@ -76,15 +86,17 @@
 .header__logo-image {
   flex-shrink: 0;
   width: 148px;
-  height: 105px;
+  
 
 
 }
 
 .main {
-  max-width: 1340px;
+  max-width: 1440px;
   margin-left: 51px;
 }
+
+
 
 .cover {
   position: relative;
@@ -182,10 +194,11 @@
 
 .lots {
   margin-top: 200px;
+  
 }
 
 .lots__heading {
-  margin-left: 40px;
+  margin-left: 90px;
   color: #000;
   font-family: Raleway;
   font-weight: 700;
@@ -197,11 +210,11 @@
 }
 
 .lots__card-list {
-  display: inline-flex;
-  max-width: 1340px;
+  display: flex;
+  margin-left: 50px;
   margin-top: 30px;
   list-style: none;
-
+  flex-wrap:wrap;
 
 }
 
@@ -316,43 +329,29 @@
   font-weight: 700;
   font-size: 39px;
   text-transform: uppercase;
+  margin-bottom: 100px;
 
 }
 
-.about__text-first {
+
+
+.about__text{
   max-width: 885px;
-  width: 100%;
-  min-height: 96px;
-  margin-top: 100px;
-  margin-left: 100px;
   color: #000;
   font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: normal;
-}
-
-.about__text-second {
-  flex-shrink: 0;
-  max-width: 885px;
-  width: 100%;
-  min-height: 119px;
-  margin-top: 40px;
+  margin-bottom: 40px;
   margin-left: 100px;
-  color: #000;
-  font-family: Raleway;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  line-height: normal;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1340px;
+  max-width: 1440px;
   min-height: 97px;
   margin-top: 250px;
   margin-bottom: 100px;
@@ -368,11 +367,15 @@
 
 }
 
+.address_list {
+  list-style: none;
+}
+
 .footer__menu-list-left {
   list-style: none;
 }
 
-.footer__menu-list-center {
+.footer__menu-list {
   justify-items: center;
   width: 200px;
   text-align: center;
