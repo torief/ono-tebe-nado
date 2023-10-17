@@ -14,10 +14,10 @@
 <body>
   <header class="header">
     <div class="menu">
-    <nav>
-      <u class="header__links-list-line">
-        <li class="header__links-list-item-line">
-          <a class="header-link_no-bullit">главная</a>
+    <nav class="header_menu">
+      <ul class="header__links-list-line">
+        <li class="header__links-list-item-line header__links-list-item-line_no-bullit">
+          <a class="header-link_bullit header-link_no-bullit" href="#">главная</a>
         </li>
         <li class="header__links-list-item-line">
           <a class="header-link_bullit" href="#">посмотреть лоты</a>
@@ -25,10 +25,10 @@
         <li class="header__links-list-item-line">
           <a class="header-link_bullit" href="#">об аукционе</a>
         </li>
-      </u>
+      </ul>
     </nav>
-    <a class="header_logo">
-      <img class="header__logo-image" src="./images/logo-black.svg" alt=" Черный логотип проекта" />
+    <a class="logo">
+      <img class="logo-image" src="./images/logo-black.svg" alt=" Черный логотип проекта" />
     </a>
     <address class="address_block">
       <ul class="address_list">
@@ -36,10 +36,10 @@
       <a class="address-link_no-bullit" href="tel:+99995555555">+9 999 555 5555</a>
         </li>
         <li class="address_link_list_item">
-      <a class="address-link_no-bullit" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <a class="address-link_no-bullit address_link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
         <li class="address_link_list_item">
-      <a class="address-link_no-bullit">наб. Принсенграхт 263-265, Амстердам</a>
+      <p class="address-link_no-bullit address_link">наб. Принсенграхт 263-265, Амстердам</p>
         </li>
     </ul>
     </address>
@@ -50,12 +50,10 @@
     <section class="cover">
       <div class="overlay"></div>
       <h1 class="cover__title">
-        <span class="aligned-text"><span class="no-letter-spacing">о</span><span
-            class="letter-spacing-extended">н</span><span class="no-letter-spacing">о</span></span>
-        <span class="aligned-text aligned-text_center"><span class="no-letter-spacing">те</span><span
-            class="letter-spacing-extended">б</span><span class="no-letter-spacing">е</span></span>
-        <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">н</span><span
-            class="no-letter-spacing">адо</span></span>
+        <span class="aligned-text aligned-text_left">о<span class="letter-spacing-extended">н</span>о</span>
+        <span class="aligned-text aligned-text_center">те<span class="letter-spacing-extended">б</span><span class="no-letter-spacing">е</span></span>
+        <span class="aligned-text aligned-text_right"><span class="letter-spacing-extended">н</span>ад<span
+            class="no-letter-spacing">о</span></span>
       </h1>
       <div class="cover__description">
         <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
@@ -65,32 +63,44 @@
     <section class="lots">
       <h1 class="lots__heading">Лоты</h1>
       <ul class="lots__card-list">
-        <li class="card card_type_film">
+        
+        <li class="lots__card-list-item card card_type_film">
+         <section class="lots__card">
+          <div class="overlay"></div>
+        </section>
           <a class="card-link" href="#">
-            <div class="overlay"></div>
             <h2 class="card__title"> Фильм режиссёра, который бросил киношколу </h2>
             <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
               знали, что режиссёр — Пол Томас Андерсон?</p>
           </a>
+        
         </li>
-        <li class="card card_type_book">
+        <li class="lots__card-list-item card card_type_book">
+          <section class="lots__card">
+          <div class="overlay"></div>
+        </section>
           <a class="card-link" href="#">
-            <div class="overlay"></div>
+            
             <h2 class="card__title" href="#">Книга, где описан один скучный день из жизни рекламного агента</h2>
             <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
               древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с
               античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
               Джеймса Джойса?</p>
           </a>
+        
         </li>
-        <li class="card card_type_picture">
+        <li class="lots__card-list-item card card_type_picture">
+          <section class="lots__card">
+          <div class="overlay"></div>
+        </section>
           <a class="card-link" href="#">
-            <div class="overlay"></div>
+            
             <h2 class="card__title" href="#">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
             <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
               инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что
               это — одна из революционных работ Кандинского?</p>
           </a>
+        
         </li>
       </ul>
       <a class="lots__look-more-link" href="#">посмотреть больше</a>
@@ -130,21 +140,21 @@
           <a class="address-link_no-bullit">наб. Принсенграхт 263-265, Амстердам</a>
         </li>
       </ul>
-    </address class="address_block">
+    </address>
     <nav class="footer__menu">
       <ul class="footer__menu-list">
         <li class="footer__menu-list-item">
-          <a class="footer__menu-link">главная</a>
+          <a class="header-link_no-bullit" href="#">главная</a>
         </li>
         <li class="footer__menu-list-item">
-          <a class="footer__menu-link_active" href="#o">посмотреть лоты</a>
+          <a class="header-link_bullit" href="#">посмотреть лоты</a>
         </li>
         <li class="footer__menu-list-item">
-          <a class="footer__menu-link_active" href="#o">об аукционе</a>
+          <a class="header-link_bullit" href="#">об аукционе</a>
         </li>
       </ul>
     </nav>
-    <div class="footer__social-list">
+    <div class="footer__social-list_block">
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#" class="footer__social-link">
