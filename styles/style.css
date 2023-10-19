@@ -1,22 +1,14 @@
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1440px;
+  justify-content: space-between;
   padding: 92px 52px 92px;
   font-size: 18px;
 }
 
-.menu {
-  display: grid;
-  grid-template-columns: 2.8fr 2.36fr 1.12fr;
-  place-content: center space-between;
-  max-width: 1440px;
-}
+
   
 .header_menu {
   justify-content: center;
-  
 }
 
 .address_link_list_item {
@@ -68,11 +60,6 @@
   text-underline-position: under; 
 }
 
-
-.main {
-  max-width: 1440px;
-}
-
 .cover {
   position: relative;
   min-height: 757px;
@@ -114,7 +101,6 @@
 
 
 .aligned-text_center {
-  width: 100%;
   text-align: center;
 }
 
@@ -130,7 +116,6 @@
   letter-spacing: 0px;
 
 }
-
 
 .cover__description {
   position: relative;
@@ -211,9 +196,6 @@
   text-decoration: none;  
 }
 
-
-
-
 .card__title {
   position: relative;
   z-index: 1;
@@ -291,7 +273,6 @@
 }
 
 .about__title {
-  width: 100%;
   margin-top: 155px;
   margin-bottom: 100px;
   margin-left: 110px;
@@ -308,10 +289,11 @@
   font-size: 20px;
   font-style: normal;
   line-height: normal;
+  margin-bottom: 27px;
 }
 
 .about__text:last-child {
-  margin-top: 27px;
+  margin-bottom: 0px;
 }
 
 .footer {
@@ -320,10 +302,9 @@
   padding: 0 50px 90px;
   font-size: 18px;
   font-weight: 400;
-  max-width: 1440px;
+  
   margin-top: 175px;
 }
-
 
 .footer__menu {
   display:flex;
