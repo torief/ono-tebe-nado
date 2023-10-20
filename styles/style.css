@@ -1,5 +1,6 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
   padding: 92px 52px 92px;
   font-size: 18px;
@@ -12,7 +13,7 @@
 }
 
 .address_link_list_item {
-  max-width: 250px;
+  max-width: 240px;
 }
 
 
@@ -58,6 +59,10 @@
   font-size: 18px;
   font-style: normal;
   text-underline-position: under; 
+}
+
+.header .address_block{
+  justify-self: end;
 }
 
 .cover {
@@ -282,7 +287,7 @@
 }
 
 .about__text {
-  max-width: 885px;
+  
   margin-left: 110px;
   color: #000;
   font-weight: 400;
