@@ -5,9 +5,7 @@
   padding: 92px 52px 92px;
   font-size: 18px;
 }
-
-
-  
+ 
 .header_menu {
   justify-content: center;
 }
@@ -15,7 +13,6 @@
 .address_link_list_item {
   max-width: 240px;
 }
-
 
 
 .header__links-list-line {
@@ -26,7 +23,6 @@
   text-align: center;
   text-decoration: none;
 }
-
 
 
 .header__link {
@@ -287,7 +283,6 @@
 }
 
 .about__text {
-  
   margin-left: 110px;
   color: #000;
   font-weight: 400;
@@ -307,7 +302,6 @@
   padding: 0 50px 90px;
   font-size: 18px;
   font-weight: 400;
-  
   margin-top: 175px;
 }
 
@@ -316,7 +310,6 @@
   flex-direction: column;
   place-content: center space-between;
   padding: 6px 9px 0 0;
-
 }
 
 .address_list {
@@ -325,7 +318,6 @@
 
 .footer__link {
   text-underline-position: under;
- 
 }
 
 .footer__link_active {
